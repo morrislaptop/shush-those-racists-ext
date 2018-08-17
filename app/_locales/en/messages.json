@@ -1,0 +1,10 @@
+{
+  "appName": {
+    "message": "shush those racists ext",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "Tired of racist Pollies like Bob Katter, Fraser Anning and Pauline Hanson making noise and filling up your feed?  Now you can shush those racists!",
+    "description": "The description of the application"
+  }
+}
