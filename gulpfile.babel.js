@@ -90,7 +90,8 @@ gulp.task('chromeManifest', () => {
 gulp.task('babel', () => {
   const files = [
     'background.js',
-    'chromereload.js'
+    'chromereload.js',
+    'contentscript.js',
   ];
 
   const tasks = files.map(file => (
@@ -138,7 +139,7 @@ gulp.task('wiredep', () => {
 gulp.task('package', function () {
   var manifest = require('./dist/manifest.json');
   return gulp.src('dist/**')
-      .pipe($.zip('shush those racists ext-' + manifest.version + '.zip'))
+      .pipe($.zip('shush those racists-' + manifest.version + '.zip'))
       .pipe(gulp.dest('package'));
 });
 
