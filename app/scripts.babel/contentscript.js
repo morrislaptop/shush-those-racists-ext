@@ -27,6 +27,7 @@ chrome.extension.sendMessage({}, function (response) {
       clearInterval(readyStateCheckInterval);
 
       if (window.location.host.indexOf('racists') > -1) return;
+      if (window.location.pathname.indexOf('intent/tweet') > -1) return;
 
       // phrases
       findAndReplaceDOMText(
