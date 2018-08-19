@@ -8,13 +8,10 @@
     "128": "images/icon-128.png"
   },
   "default_locale": "en",
-  "background": {
-    "scripts": [
-      "scripts/chromereload.js",
-      "scripts/background.js"
-    ]
-  },
-  "permissions": [
-    "background"
+  "content_scripts": [
+    {
+      "js": [ "scripts/background.js" ],
+      "matches": [ "http://*/*", "https://*/*" ]
+    }
   ]
 }
